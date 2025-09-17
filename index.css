@@ -1,14 +1,7 @@
-
-* { box-sizing: border-box; }
-html,body { height:100%; }
-body{
-  margin:0;
-  font-family:  Arial;
-  background-color: #222;
-  color:#ffffff;
-  line-height:1.3;
+html {
+  margin: 0;
+  font-family: sans-serif;
 }
-
 .nav{
   display:flex;
   justify-content:center;
@@ -19,8 +12,8 @@ body{
   position:sticky;
   top:0;
 }
-
 .btn {
+  display: inline-block;
   padding:12px 26px;
   background-color: #ffffff;
   color:#222;
@@ -32,6 +25,7 @@ body{
   transition:transform .12s ease, box-shadow .12s ease;
 }
 .btn2{
+  display: inline-block;  
   padding:12px 26px;
   background-color: #ffffff;
   color:#222;
@@ -43,62 +37,22 @@ body{
   transition:transform .12s ease, box-shadow .12s ease;
   background:linear-gradient(#fafafa,#ededed);
 }
-.practice{
-  max-width:940px;
-  margin:28px auto;
-  padding:18px;
-}
-
-h1{
-  margin:6px 0 20px 0;
-  font-size:36px;
-  font-weight:800;
-  color:#ffffff;
-  text-align: center;
-}
+table,
+      th,
+      td {
+        border: 1px solid #e7e7e7;
+      }
 .projects{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  padding-bottom:50px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #222;
-
-  width: 300px;
-  position: fixed;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  display: block;
-  font-weight: 600;
-  margin: 10px 0;
-  
-}
-.projects-link{
-    display: inline-block;
-    padding: 8px 14px;
-    margin: 8px;
-    border-radius: 6px;
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: 600;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-    color: black
-}
-
-
-@media (max-width:640px){
-  h1{ font-size:28px; }
-  .practice{ padding:12px; margin:14px; }
-  .btn{ padding:10px 14px; font-size:14px; }
-  .card{ font-size:16px; padding:14px; }
-}
+  background-color: #212121;
+  color: #ffffff;
+  display: flex;
+   align-items: center;
+  justify-content: center;
+   text-align: center;
+  height: 100vh;
+} 
+.color {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
